@@ -1,116 +1,119 @@
-🖥️ Home Lab VM Installation Guide
+# Home Lab VM Installation Guide
+
 This guide documents the setup of the virtual machines used in the SOC Home Lab. It includes system specifications, installation steps, network configuration, connectivity validation, and screenshots demonstrating each step.
 
-📌 Lab Architecture Overview
-VM Name	OS	Purpose
-Windows‑Victim	Windows 10	Endpoint for monitoring & attack simulation
-Kali‑Attacker	Kali Linux	Attack box for generating activity
-Both VMs communicate over a Host‑Only network to keep traffic isolated from the internet.
+---
 
-🪟 Windows 10 Victim VM Setup
-System Specifications
-Setting	Value
-Memory	2 GB
-Processors	4
-Hard Disk	80 GB
-Network Adapter	Host‑Only
-Installation Steps
-1. Create the VM
-Select Windows 10 ISO
+## Lab Architecture Overview
 
-Apply the specs listed above
+| VM Name        | OS          | Purpose                                   |
+|----------------|-------------|--------------------------------------------|
+| Windows-Victim | Windows 10  | Endpoint for monitoring & attack simulation |
+| Kali-Attacker  | Kali Linux  | Attack box for generating activity         |
 
-📸 Screenshot:  
-(Your existing VM settings screenshot remains here — no changes needed.)
+Both VMs communicate over a **Host-Only** network to keep traffic isolated from the internet.
 
-2. Install Windows 10
-Proceed through the standard Windows installation
+---
 
-Create a local user account
+# Windows 10 Victim VM Setup
 
-📸 Screenshot:  
-(Your Windows installation screenshot stays here.)
+## System Specifications
 
-3. Verify Network Connectivity
-Open Command Prompt and run:
+| Setting         | Value      |
+|-----------------|-----------|
+| Memory          | 2 GB      |
+| Processors      | 4         |
+| Hard Disk       | 80 GB     |
+| Network Adapter | Host-Only |
 
-Code
-ipconfig
-Record the IPv4 address (example from your file: 192.168.222.129).
+---
 
-📸 Screenshot:  
-(Your ipconfig screenshot stays here.)
+## Installation Steps
 
-4. Test Communication With Kali
-From Windows:
+### 1. Create the VM
 
-Code
-ping <Kali-IP>
-📸 Screenshot:  
-(Your Windows → Kali ping screenshot stays here.)
+- Select **Windows 10 ISO**.
+- Apply the specs listed above.
 
-🐉 Kali Linux Attacker VM Setup
-System Specifications
-Setting	Value
-Memory	2 GB
-Processors	2
-Hard Disk	60 GB
-Network Adapter	Host‑Only
-Installation Steps
-1. Create the VM
-Select Kali Linux ISO
+<img width="752" height="586" alt="Capture" src="https://github.com/user-attachments/assets/93ffd7bc-266d-4798-b50b-7c526cd2963a" />
+ *VM settings page showing memory, CPU, disk, and network adapter.*
 
-Apply the specs listed above
+---
 
-📸 Screenshot:  
-(Your Kali VM settings screenshot stays here.)
+### 2. Install Windows 10
 
-2. Install Kali Linux
-Choose Graphical Install
+- Proceed through the standard Windows installation.
+- Create a local user account.
 
-Create a user account
+<img width="1024" height="768" alt="Victim-2026-03-17-13-49-25" src="https://github.com/user-attachments/assets/c6add14a-2d34-43f6-ade0-0799fcc7c7a8" />
+*Windows installation screen or first login desktop.*
 
-Complete installation
+---
 
-📸 Screenshot:  
-(Your Kali desktop screenshot stays here.)
+### 3. Verify Network Connectivity
 
-3. Verify Network Connectivity
+Open **Command Prompt** and run ipconfig.
+
+<img width="1024" height="768" alt="Victim-2026-03-17-13-53-25" src="https://github.com/user-attachments/assets/9fdcbd28-ea3d-4d06-9dad-5ac8b65ce389" />
+
+### 4. Test Communication with Kali
+
+<img width="1024" height="768" alt="Victim-2026-03-17-14-20-15" src="https://github.com/user-attachments/assets/ca762de7-8f98-4d75-881e-111456c7699b" />
+
+# Kali Linux Attacker VM Setup
+
+## System Specifications
+
+| Setting         | Value      |
+|-----------------|-----------|
+| Memory          | 2 GB      |
+| Processors      | 2         |
+| Hard Disk       | 60 GB     |
+| Network Adapter | Host-Only |
+
+---
+
+## Installation Steps
+
+### 1. Create the VM
+
+- Select **Kali Linux ISO**.
+- Apply the specs listed above.
+
+<img width="761" height="481" alt="Capture1" src="https://github.com/user-attachments/assets/9adec856-b608-4404-ba63-288458af910a" />
+*Kali VM settings page showing memory, CPU, disk, and network adapter.*
+
+---
+
+### 2. Install Kali Linux
+
+- Choose **Graphical Install**.
+- Create a user account.
+- Complete installation.
+
+<img width="1164" height="616" alt="attack-2026-03-17-14-03-48" src="https://github.com/user-attachments/assets/9acd9bfb-fe7c-4eb3-a737-f7dd7b6596bc" />
+*Kali desktop after installation.*
+
+---
+
+### 3. Verify Network Connectivity
+
 Open a terminal and run:
 
-Code
+```bash
 ifconfig
-Record the IPv4 address (example from your file: 192.168.222.128).
 
-📸 Screenshot:  
-(Your ifconfig screenshot stays here.)
+<img width="1164" height="616" alt="attack-2026-03-17-14-06-13" src="https://github.com/user-attachments/assets/2c2dbefe-d2c2-4ce4-82fb-9d169a1eb1fe" />
 
-4. Test Communication With Windows
-From Kali:
+### 4. Test Communication with Windows
 
-Code
-ping <Windows-IP>
-📸 Screenshot:  
-(Your Kali → Windows ping screenshot stays here.)
+<img width="1164" height="616" alt="attack-2026-03-17-14-18-36" src="https://github.com/user-attachments/assets/e60dc615-4e9f-4243-8373-3abed9fcce8e" />
 
-🌐 Network Configuration Summary
-Both VMs use:
 
-Host‑Only Adapter
 
-Same host‑only subnet
 
-No internet exposure
 
-VM	Command	Output Example
-Windows	ipconfig	192.168.222.129
-Kali	ifconfig	192.168.222.128
-🧪 Connectivity Validation
-Connectivity was successfully validated:
 
-Kali → Windows ping
 
-Windows → Kali ping  
 
-📸 Screenshots:  
-(Your ping screenshots remain exactly where they are.)
+
