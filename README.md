@@ -1,19 +1,28 @@
 # SOC Home Lab
 
 ## Overview
-This project documents my cybersecurity home lab focused on Security Operations Center monitoring and threat detection.
+This project demonstrates the creation of a Security Operations Center (SOC) home lab environment used to simulate real-world cyber threats and analyze system activity.
 
-## Tools Used
-- Wazuh SIEM
-- Windows Event Logs
-- Linux Syslog
-- Wireshark
+## Objectives
+- Build a virtualized lab environment
+- Simulate attacker and victim machines
+- Capture and analyze logs
+- Develop foundational threat detection skills
 
-## Lab Goals
-- Monitor system logs
-- Detect suspicious activity
-- Investigate alerts
+## Lab Components
+- Virtual Machines (Windows & Linux)
+- Networking (NAT / Internal)
+- SIEM (Planned: Splunk / Wazuh)
+- Attack Simulation (Planned: Kali Linux)
 
-## Screenshots
+## Project Breakdown
+- VM Installation → vm-installation.md
+- Network Setup → (coming soon)
+- SIEM Setup → (coming soon)
+- Attack Simulation → (coming soon)
 
-Security Operations Center home labs with SIEM monitoring, log analysis, and incident investigations.
+## Skills Demonstrated
+- Virtualization
+- System Administration
+- Network Configuration
+- Cybersecurity Fundamentals
