@@ -1,3 +1,13 @@
+# SOC Home Lab – VM Installation
+
+## Objective
+This lab demonstrates how I built a virtualized environment to simulate real-world SOC operations, including log analysis, threat detection, and attack simulation.
+
+## Tools Used
+- VMware / VirtualBox
+- Windows 10 VM
+- Linux VM (Kali/Ubuntu)
+
 # Home Lab VM Installation Guide
 
 This guide documents the setup of the virtual machines used in the SOC Home Lab. It includes system specifications, installation steps, network configuration, connectivity validation, and screenshots demonstrating each step.
@@ -103,6 +113,9 @@ Open **Command Prompt** and run ipconfig.
 ### 4. Test Communication with Windows
 <img width="1164" height="616" alt="attack-2026-03-17-14-18-36" src="https://github.com/user-attachments/assets/888d8ff1-45eb-4964-971d-4d5dd1389a6c" />
 
+## Why This Matters
+
+Virtual machines allow analysts to safely simulate attacks and monitor logs without impacting production systems. This mirrors how SOC environments test detection rules and investigate threats.
 
 
 
