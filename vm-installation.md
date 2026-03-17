@@ -98,16 +98,11 @@ Open **Command Prompt** and run ipconfig.
 
 ### 3. Verify Network Connectivity
 
-Open a terminal and run:
-
-```bash
-ifconfig
-
 <img width="1164" height="616" alt="attack-2026-03-17-14-06-13" src="https://github.com/user-attachments/assets/2c2dbefe-d2c2-4ce4-82fb-9d169a1eb1fe" />
 
 ### 4. Test Communication with Windows
 <img width="1164" height="616" alt="attack-2026-03-17-14-18-36" src="https://github.com/user-attachments/assets/888d8ff1-45eb-4964-971d-4d5dd1389a6c" />
-<img width="1164" height="616" alt="attack-2026-03-17-14-18-36" src="https://github.com/user-attachments/assets/888d8ff1-45eb-4964-971d-4d5dd1389a6c" />
+
 
 
 
