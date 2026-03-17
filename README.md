@@ -1,11 +1,11 @@
 # SOC Home Lab
 
 ## Overview
-This project documents mycybersurity home lab focused on Security Operations Center montioring and threat detection.
+This project documents my cybersecurity home lab focused on Security Operations Center monitioing and threat detection.
 
 ## Tools Used
 - Wazuh SIEM
-- Windwons Event Logs
+- Windows Event Logs
 - Linux Syslog
 - Wireshark
 
