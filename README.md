@@ -1,7 +1,7 @@
 # SOC Home Lab
 
 ## Overview
-This project documents my cybersecurity home lab focused on Security Operations Center monitioing and threat detection.
+This project documents my cybersecurity home lab focused on Security Operations Center monitoring and threat detection.
 
 ## Tools Used
 - Wazuh SIEM
