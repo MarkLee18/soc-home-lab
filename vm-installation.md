@@ -107,7 +107,9 @@ ifconfig
 
 ### 4. Test Communication with Windows
 
-<img width="1164" height="616" alt="attack-2026-03-17-14-18-36" src="https://github.com/user-attachments/assets/e60dc615-4e9f-4243-8373-3abed9fcce8e" />
+<img width="1164" height="616" alt="attack-2026-03-17-14-18-36" src="https://github.com/user-attachments/assets/28b8059c-6ded-4e41-97c6-54a59524c085" />
+
+
 
 
 
